@@ -1,65 +1,131 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-<!-- ヘッダー -->
-<header>
-  <h1>Mom's Bakery</h1>
-</header>
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダー */
+header {
+  background-color: orange;
+  background-image: url(header.jpg);
+  padding: 50px;
+}
+
+/* h1見出し */
+h1 {
+  font-size: 70px;
+  font-family: lobster;
+  color: ivory;
+  text-align: center;
+}
 
 
-<!-- お店紹介 -->
-<section>
-  <h2>Mom's Bakeryについて</h2>
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
+section {
+  background-color: ivory;
+  padding: 30px;
+  text-align: left;
+}
 
-  <!--  レイアウト用の箱 -->
-  <div>
+/* h2見出し */
+h2 {
+  color: brown;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
 
-    <!-- 写真の箱 -->
-    <div>
-      <img src="cro.jpg" alt="クロワッサン">
-    </div>
+/* レイアウト用の箱 */
+div {
+  display: flex;
+}
 
-    <!-- 説明の箱 -->
-    <div>
-      <p>
-        1725年にフランスから来たサラ・オートゥイユが、ホープタウン時計台の前で小さな屋台を使ってクロワッサンを売り始めたのがMom's Bakeryの始まりです。<br>
-        現在の店長マーサで12代目となりますが、一番人気の石釜で焼いたサクサククロワッサンは創業当時の味を約３００年守り続けています。
-      </p>
-    </div>
+/* 画像 */
+img {
+  width: 200px;
+  border-radius: 10px;
+}
 
-  </div>
+/* 段落 */
+p {
+  line-height: 180%;
+  margin-left: 20px;
+}
 
-</section>
+
+/* ===== メニューのスタイル ===== */
+/* メニューのセクション */
+section.menu {
+  /* 背景の画像 */
+  background-image: url(wood.jpg);
+}
+
+/* メニューのh2見出し */
+h2.menu-title {
+  /* 文字の色 */
+  color: white;
+}
+
+/* メニュー表 */
+table {
+  /* 横幅 */
+  width: 100%;
+  /* 下がわの余白 */
+  margin-bottom: 20px;
+  /* 枠線の設定 */
+  border-collapse: collapse;
+  /* 背景の色 */
+  background-color: ivory;
+}
+
+/* メニュー表のセル */
+td {
+  /* 枠線 */
+  border: 1px solid black;
+  /* 内がわの余白 */
+  padding: 10px;
+}
+
+/* メニュー表の見出しセル */
+th {
+  /* 枠線 */
+  border: 1px solid black;
+  /* 内がわの余白 */
+  padding: 10px;
+  /* 背景の色 */
+  background-color: gold;
+}
+
+/* リンク */
+a {
+  /* 文字の色 */
+  color: brown;
+  /* 背景の色 */
+  background-color: gold;
+  /* 内がわの余白 */
+  padding: 10px;
+  /* 文字の装飾 */
+  text-decoration: none;
+  /* 角丸 */
+  border-radius: 20px;
+  /* 並べ方 */
+  display: block;
+  /* 文字の整列 */
+  text-align: center;
+  /* 下がわの余白 */
+  margin-bottom: 10px;
+}
+
+/* リンクにさわった時 */
+a:hover {
+  /* 文字の色 */
+  color: white;
+  /* 背景の色 */
+  background-color: teal;
+}
 
 
-<!-- メニュー -->
-<section class="menu">
-  <h2 class="menu-title">メニュー</h2>
-
-  <!-- メニュー表 -->
-  <table>
-    <tr>
-      <th>商品名</th>
-      <th>価格</th>
-    </tr>
-    <tr>
-      <td>サクサククロワッサン</td>
-      <td>280円</td>
-    </tr>
-    <tr>
-      <td>レーズンデニッシュ</td>
-      <td>200円</td>
-    </tr>
-    <tr>
-      <td>クラシックバゲット</td>
-      <td>380円</td>
-    </tr>
-  </table>
-
-  <!-- リンク -->
-  <a href="season.html">季節限定のメニューはこちら</a>
-
-</section>
-
-<!-- フッター -->
-<footer>
-  &copy; Mom's Bakery
-</footer>
+/* ===== フッターのスタイル ===== */
+/* フッター */
+footer {
+  color: white;
+  background-color: brown;
+  text-align: center;
+  padding: 10px;
+}
